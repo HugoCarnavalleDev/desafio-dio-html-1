@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Curso básico de HTML</title>
+    </head>
+    <body>
+        <h1><font face="Arial">Introdução ao HTML</font></h1>
+        <hr />
+        <h2 id="Início"><font face="Arial">Índice</font></h2>
+
+        <ol>
+            <li><a href="#Hstória"><font face="Arial" size="3">Hstória da Computação</font></a></li>
+            <li><a href="#Clients"><font face="Arial" size="3">O que são Clients</font></a></li>
+            <li><a href="#Servers"><font face="Arial" size="3">O que são Servers</font></a></li>
+            <li><a href="#Linguagens"><font face="Arial" size="3">Linguagens de Programação</font></a></li>
+            <li><a href="#HTML"><font face="Arial" size="3">HTML na prática</font></a></li>
+            <ul>
+                <li><a href="#Estrutura"><font face="Arial" size="3">Estrutura Básica do HTML</font></a></li>
+                <li><a href="#Tags"><font face="Arial" size="3">Falando sobre Tags</font></a></li>
+                <li><a href="#Atributos"><font face="Arial" size="3">Atributos das Tags</font></a></li>
+                <li><a href="#Textos"><font face="Arial" size="3">Textos</font></a></li>
+                <li><a href="#Listas"><font face="Arial" size="3">Listas Ordenadas e Não Ordenadas</font></a></li>
+                <li><a href="#Links"><font face="Arial" size="3">Links</font></a></li>
+            </ul>
+            <li><a href="#Referências"><font face="Arial" size="3">Referências</font></a></li>
+        </ol>
+
+        <h2 id="Hstória"><font face="Arial">História da Computação</font></h2>
+        <small><u><a href="#Início"><font face="Arial">Voltar</font></a></u></small>
+
+        <h3><font face="Arial"></font>Gerações de Computadores</font></h3>
+        <p><font face="Arial" size="3"><strong><i>1ª Geração (1940-1956)</i></strong>: Nesta época, os computadores eram enormes, ocupando salas inteiras, e usavam válvulas e painéis de controle para processar dados. <U>Um exemplo famoso é o MARK I</U>, que foi um dos primeiros computadores digitais.</font></p>
+        <p><font face="Arial" size="3"><strong><i>2ª Geração (1956-1963)</i></strong>: Os computadores da segunda geração eram menores, mais rápidos e mais confiáveis do que os da geração anterior. Eles <u>usavam transistores em vez de válvulas</u>, o que os tornava mais eficientes energeticamente. Os sistemas operacionais começaram a ser desenvolvidos nesta época.</font></p>
+        <p><font face="Arial" size="3"><strong><i>3ª Geração (1964-1971)</i></strong>: Os computadores da terceira geração <u>usavam circuitos integrados</u>, que eram chips contendo vários transistores. Isso os tornava ainda menores, mais rápidos e mais baratos de produzir. Os computadores podiam ser usados por várias pessoas ao mesmo tempo, graças ao desenvolvimento dos sistemas operacionais multiusuários.</font></p>
+        <p><font face="Arial" size="3"><strong><i>4ª Geração (1971-até os dias atuais)</i></strong>: Com o surgimento dos <u>microprocessadores</u>, os computadores se tornaram ainda menores, mais poderosos e mais acessíveis. Os microprocessadores eram chips que continham todos os componentes principais de um computador em um único circuito integrado, o que permitia que os computadores pessoais se tornassem uma realidade.</font></p>
+        <p><font face="Arial" size="3">Essas quatro gerações marcaram avanços significativos na evolução dos computadores, levando a mudanças fundamentais em seu tamanho, capacidade e acessibilidade. Segundo o site Toda matéria:</font></p>
+        <blockquote>
+            <font face="Arial" size="3">"nós pertencemos à quarta geração dos computadores, o que revela uma evolução incrível nos sistemas de informação. Um ponto de destaque é que a evolução dos computadores ocorria de maneira mais lenta. Com o desenvolvimento da sociedade, meios de comunicação e a divulgação científica podemos ver a evolução dessas máquinas em dias ou meses. Alguns estudiosos preferem acrescentar a “Quinta Geração de Computadores” com o aparecimento dos supercomputadores, utilizados por grandes corporações como a NASA. Nessa geração, é possível avaliar a evolução da tecnologia multimídia, da robótica e da internet".</font>
+        </blockquote>
+        
+        <h3><font face="Arial">Início da Internet</font></h3>
+        <p><font face="Arial" size="3"><mark>A Internet começou nos anos 1960</mark> como um projeto do governo dos Estados Unidos para criar uma rede de comunicação que fosse resistente a falhas. <mark>Chamada de ARPANET</mark>, ela conectava inicialmente universidades e instituições de pesquisa.</font></p>
+        <p><font face="Arial" size="3">Nos anos 1980, a ARPANET evoluiu para o que conhecemos como Internet, conectando mais computadores e se espalhando pelo mundo acadêmico.</font></p>
+        <p><font face="Arial" size="3">Na década de 1990, a Internet se tornou acessível ao público em geral com o surgimento da <abbr title="World Wide Web">WWW</abbr><sup>*</sup> e dos navegadores, como o Netscape. Isso levou a um crescimento explosivo da Internet, tornando-se uma parte essencial da vida moderna.</font></p>
+        <p><font face="Arial" size="3">Desde então, a Internet continuou a crescer e evoluir, se tornando um recurso fundamental para comunicação, pesquisa, entretenimento e trabalho em todo o mundo.</font></p>
+        <h5><font face="Arial"><sup>*</sup>A ideia da <abbr title="World Wide Web">WWW</abbr> começou na Suíça em 1980. Tim Berners-Lee, um britânico, teve a ideia. Ele usou um computador NeXTcube como o primeiro servidor web e para criar o primeiro navegador, chamado WorldWideWeb, em 1990.</font></h5>
+        
+        <h2 id="Clients"><font face="Arial">O que são Clients</font></h2>
+        <small><u><a href="#Início"><font face="Arial">Voltar</font></a></u></small>
+
+        <p><font face="Arial" size="3"><u>O lado do cliente</u> na web se refere aos elementos de um aplicativo web que são processados e exibidos no dispositivo do usuário final. Isso inclui o conteúdo visualizado pelo usuário e qualquer interação que o aplicativo execute no navegador do usuário. <mark>Linguagens como HTML, CSS e JavaScript são interpretadas pelo navegador no lado do cliente</mark>. Muitos aplicativos web modernos movem parte da lógica de negócios para o lado do cliente, permitindo interações mais dinâmicas e responsivas, como no site da Netflix. O termo "lado do cliente" é semelhante, mas não idêntico, ao front-end, que se refere aos processos relacionados à interação direta com o usuário final.</font></p>
+        
+        <h2 id="Servers"><font face="Arial">O que são Servers</font></h2>
+        <small><u><a href="#Início"><font face="Arial">Voltar</font></a></u></small>
+
+        <p><font face="Arial" size="3"><mark>O lado do servidor, é a parte de um site que não vemos diretamente</mark>, mas que faz ele funcionar. Ele processa as coisas que pedimos, como abrir uma página ou enviar uma mensagem. Por exemplo, quando você entra em um site, o servidor pega o que você pediu, como uma página de notícias, e a envia de volta para você ver no seu navegador. <mark>Uma das vantagens do server-side é a segurança</mark>, pois ele guarda informações importantes, como senhas, de forma protegida. Além disso, ele ajuda a controlar como o site funciona e a lidar com muitos usuários ao mesmo tempo, tornando possível criar sites complexos e que podem crescer conforme necessário.</font></p>
+        
+        <h2 id="Linguagens"><font face="Arial">Linguagens de Programação</font></h2>
+        <small><u><a href="#Início"><font face="Arial">Voltar</font></a></u></small>
+
+        <p><font face="Arial" size="3">As linguagens de programação são criadas para permitir que os programadores instruam os computadores. Enquanto as linguagens naturais, como o <del>português</del> inglês, são usadas para comunicação entre pessoas, <mark>linguagens de programação são artificiais e servem para interagir com máquinas</mark>. Quando os programadores escrevem um programa, eles estão dando uma sequência de instruções que dizem ao computador o que fazer. Existem muitas linguagens de programação diferentes, e algumas são mais populares porque são mais fáceis de entender e usar. Essas linguagens são como um tipo de código que os computadores conseguem entender. Elas são traduzidas para um código especial chamado código binário, que o computador consegue entender e executar. Assim, as linguagens de programação permitem que os computadores cumpram as instruções dadas pelos programadores, tornando possível criar softwares e sistemas que usamos todos os dias.</font></p>
+
+        <h2 id="HTML"><font face="Arial">HTML na prática</font></h2>
+
+        <h3 id="Estrutura"><font face="Arial">Estrutura Básica do HTML</font></h3>
+        <h6><u><a href="#Início"><font face="Arial">Voltar</font></a></u></h6>
+
+        <p><font face="Arial" size="3">O HTML oferece uma variedade de elementos para criar páginas web complexas e ricas em conteúdo. Sua estrutura básica é composta por Tags, tais como: <mark>&lt;html&gt;, &lt;head&gt; e &lt;body&gt;</mark>. Ilustradas conforme imagem a baixo:</font></p>                             
+       
+        <img width="500" src="https://lh3.googleusercontent.com/pw/AP1GczN8hZIFSci4ZV9Hfm1uk4jVQEuYEZJ2PAAw7p_AhgX3n_P0ob11qMwGKLd1GAgxR5vkslUN_YvoZBy8ezJhc7J_SgHYNbqZgnFrx2vKR3Z5gtflgpG8KS7Vsx6larklFypU0ci1Z7XQDNKmgC6z3j0=w460-h204-s-no-gm?authuser=0"/>
+        
+        <h3 id="Tags"><font face="Arial">Falando sobre Tags</font></h3>
+        <h6><u><a href="#Início"><font face="Arial">Voltar</font></a></u></h6>
+
+        <p><font face="Arial" size="3">Tags no HTML são elementos usados para estruturar e formatar o conteúdo de uma página web. Elas são compostas por um nome entre os símbolos de maior e menor, como &lt;tag&gt;, e são normalmente usadas em pares, uma tag de abertura e uma tag de fechamento, como &lt;tag&gt;conteúdo&lt;/tag&gt;.</font></p>
+        
+        <h4><font face="Arial">Exemplos de tags:</font></h4>
+        <blockquote>
+            <p><font face="Arial" size="3"><strong>&lt;i&gt;</strong>: é usada para colocar parte do texto em itálico, dando-lhe uma voz ou humor diferentes. É comumente usada para destacar termos técnicos, frases em outro idioma, pensamentos, nomes, entre outros.</font></p>
+            <p><font face="Arial" size="3"><strong>&lt;strong&gt;</strong>: é usada para destacar texto importante, que é mostrado em negrito.</font></p>
+            <p><font face="Arial" size="3"><strong>&lt;input&gt;</strong>: cria um espaço onde as pessoas podem digitar informações. É um dos elementos mais importantes em formulários e pode parecer de diferentes formas, dependendo do tipo de informação que se espera receber.</font></p>
+            <p><font face="Arial" size="3"><strong>&lt;img&gt;</strong>: é usada para adicionar uma imagem. Em vez de serem inseridas diretamente na página, as imagens são vinculadas a ela. Ela cria um espaço onde a imagem será exibida.</font></p>
+        </blockquote>
+        
+        <h3 id="Atributos"><font face="Arial">Atributos das Tags</font></h3>
+        <h6><u><a href="#Início"><font face="Arial">Voltar</font></a></u></h6>
+
+        <p><font face="Arial" size="3">Os tributos no HTML são características adicionais que podem ser somadas às tags para fornecer informações extras sobre como um elemento deve ser exibido ou se comportar.</font></p>
+        
+        <h4><font face="Arial">Exemplos de atributos globais:</font></h4>
+        <blockquote>
+            <p><font face="Arial" size="3"><strong>id</strong>: especifica um identificador único para um elemento HTML, que deve ser único no documento. Esse atributo é comumente usado para manipular o elemento usando JavaScript.</font></p>
+            <p><font face="Arial" size="3"><strong>style</strong>: define um estilo específico para um elemento em uma página da web. Esse estilo vai substituir qualquer estilo definido de forma global, Esse atributo é comumente usado para manipular o elemento usando CSS.</font></p>
+            <p><font face="Arial" size="3"><strong>class</strong>: indica uma ou mais classes para um elemento HTML. Geralmente, é usado para aplicar estilos a partir do CSS, mas também pode ser usado pelo JavaScript para modificar elementos com essa classe.</font></p>
+        </blockquote>
+        
+        <h4><font face="Arial">Exemplos de atributos específicos:</font></h4>
+        <blockquote>
+            <p><font face="Arial" size="3"><strong>type</strong>: especifica o tipo de elemento a ser exibido entro do campo do formulário, podendo ser númerico, texto, cor entre outros.</font></p>
+            <p><font face="Arial" size="3"><strong>src</strong>: especifica o local (URL) da imagem externa.</font></p>
+            <p><font face="Arial" size="3"><strong>width</strong>: especifica a largura de um elemento, em pixels.</font></p>
+        </blockquote>
+
+        <h3 id="Textos"><font face="Arial">Textos</font></h3>
+        <h6><u><a href="#Início"><font face="Arial">Voltar</font></a></u></h6>
+
+        <p><font face="Arial" size="3">Os cabeçalhos &lt;h1&gt; a &lt;h6&gt; são usados para organizar e destacar títulos em uma página web. Os motores de busca usam esses cabeçalhos para entender a estrutura e o conteúdo da página, enquanto os usuários geralmente os utilizam para navegar rapidamente pelo conteúdo. É importante usar os cabeçalhos na ordem correta, começando pelo &lt;h1&gt; para os títulos principais, seguido do &lt;h2&gt; para subtítulos, e assim por diante.</font></p>
+        
+        <h4><font face="Arial">Exemplos de tags para formatação de texto:</font></h4>
+        <blockquote>
+            <p><font face="Arial" size="3"><strong>&lt;p&gt;</strong>: é usado para criar um parágrafo. Sempre que você o utiliza, o texto começa em uma nova linha, e o navegador adiciona automaticamente um espaço em branco antes e depois do parágrafo.</font></p>
+            <p><font face="Arial" size="3"><strong>&lt;hr&gt;</strong>: é usada para criar uma linha horizontal que separa conteúdos em uma página HTML. É como uma linha divisória que ajuda a organizar e diferenciar partes do texto.</font></p>
+            <p><font face="Arial" size="3"><strong>&lt;u&gt;</strong>: é usada para destacar um texto de maneira diferente, geralmente colocando uma linha embaixo dele. Pode ser usado para indicar palavras escritas erradas, por exemplo. É possível mudar o estilo dessa linha usando CSS.</font></p>
+            <p><font face="Arial" size="3"><strong>&lt;mark&gt;</strong>: é usada para destacar um texto, como quando você marca um trecho importante em um documento.</font></p>
+        </blockquote>
+
+        <h3 id="Listas"><font face="Arial">Listas Ordenadas e Não Ordenadas</font></h3>
+        <h6><u><a href="#Início"><font face="Arial">Voltar</font></a></u></h6>
+
+        <p><font face="Arial" size="3">Listas em HTML permitem que desenvolvedores agrupem um conjunto de itens relacionados em listas.</font></p>
+
+        <h4><font face="Arial">Exemplos de tags de lista:</font></h4>
+        <blockquote>
+            <p><font face="Arial" size="3"><strong>&lt;ol&gt;</strong>: define uma lista ordenada. Uma lista ordenada pode ser numérica ou alfabética. A tag &lt;li&gt; é usada para definir cada item da lista.</font></p>
+            <p><font face="Arial" size="3"><strong>&lt;ul&gt;</strong>: é usada para fazer listas sem ordem (com marcadores). Para criar essas listas, use a tag &lt;ul&gt; junto com a tag &lt;li&gt;.</font></p>
+        </blockquote>
+
+        <h3 id="Links"><font face="Arial">Links</font></h3>
+        <h6><u><a href="#Início"><font face="Arial">Voltar</font></a></u></h6>
+       
+        <p><font face="Arial" size="3">A tag &lt;a&gt; é usada para criar um link para outra página. O atributo mais importante dela é o href, que indica para onde o link deve apontar. Por padrão um link não visitado é azul e sublinhado.</font></p>
+        <p><font face="Arial" size="3">Já o atributo target indica onde abrir o documento vinculado. Quando usamos o valor "<sub>-</sub>blank", o documento linkado é aberto em uma nova janela ou aba. Já o valor "<sub>-</sub>self" abre o documento linkado no mesmo quadro em que foi clicado, que é a configuração padrão.</font></p>
+        
+        <h2 id="Referências"><font face="Arial">Referências</font></h2>
+        <small><u><a href="#Início"><font face="Arial">Voltar</font></a></u></small>
+        <blockquote>
+            <p><a href="https://www.w3schools.com/html/default.asp" title="Clique aqui e confira" target="_blank"><font face="Arial" size="3">W3 Schools</font></a></p>
+            <p><a href="https://web.dio.me/track/facf3f2a-4c2d-4250-be5b-93bb4d12995e" title="Clique aqui e confira" target="_blank"><font face="Arial" size="3">Dio.me</font></a></p>
+            <p><a href="https://www.tecmundo.com.br/web/759-o-que-e-world-wide-web-.htm" title="Clique aqui e confira" target="_blank"><font face="Arial" size="3">TecMundo</font></a></p>
+            <p><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" title="Clique aqui e confira" target="_blank"><font face="Arial" size="3">Toda Matéria</font></a></p>
+        </blockquote>
+    </body>
+</html>
